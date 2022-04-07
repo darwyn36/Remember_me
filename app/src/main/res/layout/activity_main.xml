@@ -1,59 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/lista" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/txt_registrar"
-        android:textSize="24sp" />
-
-    <EditText
-        android:id="@+id/txtTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:hint="@string/txt_titulo"
-        android:inputType="textPersonName|textCapCharacters" />
-
-    <EditText
-        android:id="@+id/txtDescripcion"
-        android:layout_width="match_parent"
-        android:layout_height="67dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Descripción"
-        android:inputType="textMultiLine" />
-
-    <EditText
-        android:id="@+id/txtDireccion"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Dirección"
-        android:inputType="textMultiLine" />
-
-    <Button
-        android:id="@+id/btnGuardar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Guardar" />
-</LinearLayout>
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

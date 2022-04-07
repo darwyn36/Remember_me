@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">conexionBD</string>
-    <string name="txt_registrar">Registrar actividad:</string>
-    <string name="txt_titulo">Título</string>
+    <string name="app_name">Remember me</string>
+    <string name="button_mas">+</string>
+    <string name="text_Evento"> nuevo evento </string>
+    <string name="text">Título</string>
+    <string name="text_direcc">Dirección</string>
+    <string name="text_descrip">Descripción</string>
+    <string name="btn_guardar">Guardar</string>
 </resources>
